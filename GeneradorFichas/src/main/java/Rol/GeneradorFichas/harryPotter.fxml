@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Rol.GeneradorFichas.ControladorHarryPotter">
+   <children>
+      <Label layoutX="26.0" layoutY="67.0" text="Nombre completo" />
+      <TextField fx:id="tfNombre" layoutX="25.0" layoutY="84.0" />
+      <CheckBox fx:id="chbMortifago" layoutX="30.0" layoutY="350.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="79.0" text="Mortifago" />
+      <Button fx:id="btnGenerar" layoutX="25.0" layoutY="448.0" mnemonicParsing="false" onAction="#generarFicha" text="Generar ficha" />
+      <Label layoutX="25.0" layoutY="125.0" text="Ascendencia" />
+      <Label layoutX="26.0" layoutY="29.0" text="Datos basicos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="105.0" text="Durante los cursos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbAscendencia" layoutX="26.0" layoutY="142.0" prefHeight="25.0" prefWidth="149.0" promptText="vacio" />
+      <Label layoutX="31.0" layoutY="180.0" text="Tipo de mago" />
+      <ComboBox fx:id="cbTipo" layoutX="27.0" layoutY="197.0" prefHeight="25.0" prefWidth="149.0" promptText="vacio" />
+      <Label layoutX="32.0" layoutY="234.0" text="Curso" />
+      <ComboBox fx:id="cbCurso" layoutX="31.0" layoutY="251.0" onAction="#activarCursos" prefHeight="25.0" prefWidth="149.0" promptText="vacio" />
+      <Label layoutX="28.0" layoutY="383.0" text="Patronus" />
+      <TextField fx:id="tfPatronus" layoutX="27.0" layoutY="400.0" />
+      <Label layoutX="31.0" layoutY="288.0" text="Casa" />
+      <ComboBox fx:id="cbCasa" layoutX="32.0" layoutY="305.0" prefHeight="25.0" prefWidth="149.0" promptText="vacio" />
+      <Label layoutX="317.0" layoutY="150.0" text="Posicion" />
+      <ComboBox fx:id="cbQuidditch" disable="true" layoutX="318.0" layoutY="167.0" prefHeight="25.0" prefWidth="136.0" promptText="vacio" />
+      <Label layoutX="317.0" layoutY="217.0" text="Optativa 1" />
+      <ComboBox fx:id="cbOptativa1" disable="true" layoutX="318.0" layoutY="234.0" prefHeight="25.0" prefWidth="136.0" promptText="vacio" />
+      <Label layoutX="318.0" layoutY="268.0" text="Optativa 2" />
+      <ComboBox fx:id="cbOptativa2" disable="true" layoutX="319.0" layoutY="285.0" prefHeight="25.0" prefWidth="136.0" promptText="vacio" />
+      <CheckBox fx:id="chbPrefecto" disable="true" layoutX="318.0" layoutY="342.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="136.0" text="Prefecto de su casa" />
+      <Label layoutX="319.0" layoutY="392.0" text="Extracurricular" />
+      <ComboBox fx:id="cbExtracurricular" disable="true" layoutX="320.0" layoutY="409.0" prefHeight="25.0" prefWidth="136.0" promptText="vacio" />
+      <Label layoutX="318.0" layoutY="46.0" text="Mascota" />
+      <ComboBox fx:id="cbMascota" layoutX="314.0" layoutY="63.0" prefHeight="25.0" prefWidth="136.0" promptText="vacio" />
+   </children>
+</AnchorPane>
